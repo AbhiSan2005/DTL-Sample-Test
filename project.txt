@@ -1,0 +1,122 @@
+Repository: https://github.com/AbhiSan2005/DTL-Sample-Test
+MIS: 
+612415002 Abhiraj Sankpal,
+612415006 Heramb Agashe,
+612415021 Aryan Ballal
+
+Abhiraj:
+Initialized repository locally:
+git init
+git add .
+git commit -m "Initial commit"
+
+Created working branch:
+git checkout -b abhiraj
+git push -u origin abhiraj
+
+Commit:
+fe30b5d Created branch abhiraj
+
+Viewed commit history:
+git log --oneline --all --graph
+
+
+Aryan:
+Cloned repository:
+git clone <repo-url>
+cd DTL-Sample-Test
+
+Created branch and added file:
+git checkout -b aryan
+git add Aryan.txt
+git commit -m "Created branch Aryan along with sample file"
+git push origin aryan
+
+Commit:
+81ddbd1 Created branch Aryan along with sample file
+
+
+Heramb:
+Cloned repository:
+git clone <repo-url>
+cd DTL-Sample-Test
+
+Created branch and added second file:
+git checkout -b heramb
+git add <file>
+git commit -m "Created branch hermab with second sample file"
+git push origin heramb
+
+Commit:
+dfec6f3 Created branch hermab with second sample file
+
+Merge and Conflict Resolution:
+Switched to heramb branch:
+git checkout heramb
+
+Merged Aryan branch:
+git merge aryan
+
+Conflict occurred:
+CONFLICT (add/add): Merge conflict in Aryan.txt
+
+Checked status:
+git status
+
+Resolved conflict manually by editing Aryan.txt and removing conflict markers
+
+Marked as resolved:
+git add Aryan.txt
+
+Completed merge:
+git commit -m "Merge conflict resolved"
+
+Commit:
+8e24c73 Merge conflict resolved
+
+Feature Branch Work:
+Created feature branch:
+git checkout -b feature-branch
+
+Committed changes:
+git add .
+git commit -m "Feature branch created"
+git push origin feature-branch
+
+Commit:
+2223e20 Feature branch created
+
+Pull Request (GitHub):
+
+A pull request was created on GitHub:
+feature-branch → abhiraj
+The pull request was reviewed and merged into the abhiraj branch using GitHub interface.
+
+Viewed commit history:
+git log --oneline --all --graph
+
+Summary of Commits:
+
+2223e20 Feature branch created
+8e24c73 Merge conflict resolved
+dfec6f3 Created branch hermab with second sample file
+81ddbd1 Created branch Aryan along with sample file
+fe30b5d Created branch abhiraj
+
+git logs:
+
+git log --oneline --all --graph
+* 2223e20 (origin/feature-branch, feature-branch) Feature branch created
+*   8e24c73 (origin/heramb, heramb) Merge conflict resolved
+|\  
+| * 81ddbd1 (origin/aryan, aryan) Created branch Aryan along with sample file
+* | dfec6f3 Created branch hermab with second sample file
+|/  
+* fe30b5d (HEAD -> abhiraj, origin/abhiraj, origin/HEAD) Created branch abhiraj
+
+git log --pretty=format:"%h %d %s" --all
+2223e20  (origin/feature-branch, feature-branch) Feature branch created
+8e24c73  (origin/heramb, heramb) Merge conflict resolved
+dfec6f3  Created branch hermab with second sample file
+81ddbd1  (origin/aryan, aryan) Created branch Aryan along with sample file
+fe30b5d  (HEAD -> abhiraj, origin/abhiraj, origin/HEAD) Created branch abhiraj
